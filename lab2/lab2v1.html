@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang = "ru">
+	<head>
+		<link rel = "stylesheet" href = "main.css">
+		<style type = "text/css">
+
+			body{
+				color: red;
+				font-size: 20px;
+				font-family: arial,halvetica,sans-serif;
+			}
+
+			.absolute_box{
+				position: absolute;
+				top: 50px;
+				left: 650px;
+
+				height: 50px;
+				width: 125px;
+				background: black;
+			}
+
+			.relative_box{
+				position: relative;
+				top: 50px;
+				left: 50px;
+
+				height: 50px;
+				width: 150px;
+				background: green;
+			}
+
+			.layer1{
+				float: left;
+				background: yellow;
+				border: 1px solid black;
+				padding: 5px;
+				margin-right: 10px;
+				width: 20%;
+			}
+
+			.my-flex-container{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				height: 60px;
+				width: 700px;
+				background: gray;
+			}
+
+			.my-flex-block-1{
+				color: black;
+				padding: 10px;
+				margin: 3px;
+				background: green;
+				order: 3;
+				
+			}
+
+			.my-flex-block-2{
+				color: black;
+				padding: 10px;
+				margin: 3px;
+				background: blue;
+				order: 4;
+			}
+
+			.my-flex-block-3{
+				color: black;
+				padding: 10px;
+				margin: 3px;
+				background: blue;
+				order: 1;
+			}
+
+			.my-flex-block-4{
+				color: black;
+				padding: 10px;
+				margin: 3px;
+				background: red;
+				order: 2;
+			}
+
+			.White1{
+				background: white;
+				transition: 5s;
+			}
+
+			input:checked + span{
+				background-color: black;
+			}
+
+		</style>			
+		<title> lab2v1 </title>
+	</head>
+	<body>
+
+		<div style = "font-size: 20px;color: green; font-family: arial,halvetica,sans-serif"> inline - описание </div>
+		<div> с помощью контейнера &#60;style&#62; </div>
+		<div class = "something"> c помощью стилевой таблицы, расположенной во внешнем файле </div>
+
+		<div class = "a2"> Класс </div>
+		<div id = "a1"> Идентификатор </div>
+
+		<div>
+			<div class = "absolute_box"> Абсолютное </div>
+			<div class = "relative_box"> Относительное </div>
+		</div>
+
+		<br>
+		<br>
+		<br>
+
+		<div class = "layer1"> какой то текст какой то текст </div>
+		<div> какой то текст какой то текст какой то текст </div>
+
+		<br>
+
+		<div class = "my-flex-container">
+			<div class = "my-flex-block-1"> <b> Я ПЕРВЫЙ </b> </div>
+			<div class = "my-flex-block-2"> <b> Я ВТОРОЙ </b> </div>
+			<div class = "my-flex-block-3"> <b> Я ТРЕТИЙ </b> </div>
+			<div class = "my-flex-block-4"> <b> Я ЧЕТВЕРТЫЙ </b> </div>
+		</div>
+
+		<form>
+			<input type = "radio"  name = "answer"> <span> Yes </span> <br>
+			<input type = "radio"  name = "answer"> <span> No </span> <br>
+		</form>
+	</body>
+</html>
